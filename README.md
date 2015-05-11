@@ -9,15 +9,18 @@ The original source depended on atl.
 
 
 Usage:
+```c++
 #include "winhttpclient.h"
 
-Also, see tttp://www.codeproject.com/Articles/66625/A-Fully-Featured-Windows-HTTP-Wrapper-in-C
 
 WinHttpClient client("https://www.httpssite.com");
 client.SetRequireValidSslCertificates(false);
 client.SendHttpRequest();
 WString httpResponseHeader = client.GetResponseHeader();
 String httpResponseContent = client.GetResponseContent().ToString();
+```
+Also, see tttp://www.codeproject.com/Articles/66625/A-Fully-Featured-Windows-HTTP-Wrapper-in-C
+
 
 
 
